@@ -7,7 +7,12 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , mongoose = require('mongoose')
+;
+
+var db = global.MongoConnection = mongoose.createConnection('localhost', 'test')
+  , Workshop = require('./models/workshop')
 
 var app = express();
 
