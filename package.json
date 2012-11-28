@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "test": "node ./node_modules/jasmine-node/bin/jasmine-node spec"
   },
   "dependencies": {
     "express": "3.0.3",
-    "ejs": "*"
+    "ejs": "*",
+    "jasmine-node": "*"
   }
 }
